@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Personal Trainer</string>
+    <string name="successful_login_message">Login Successful</string>
+    <string name="unsuccessful_login_message">Login Unsuccessful</string>
+    <string name="username">jdoe</string>
+    <string name="password">welcome1</string>
+</resources>
