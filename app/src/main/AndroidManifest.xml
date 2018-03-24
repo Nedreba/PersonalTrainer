@@ -13,7 +13,6 @@
         android:roundIcon="@drawable/dumbbell_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CustomersActivity" />
+        <activity android:name=".CustomerInfoActivity" />
+        <activity android:name=".NewCustomerActivity" />
+        <activity android:name=".SessionsActivity" />
+        <activity android:name=".NewSessionActivity" />
+        <activity android:name=".CompleteSessionActivity"></activity>
     </application>
 
 </manifest>

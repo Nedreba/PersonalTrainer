@@ -4,4 +4,17 @@
     <string name="unsuccessful_login_message">Login Unsuccessful</string>
     <string name="username">jdoe</string>
     <string name="password">welcome1</string>
+    <string name="logged_in">Logged In:</string>
+
+    <string name="login_button">Login</string>
+
+    <string name="customers_button">Customers</string>
+    <string name="new_customer_button">New Customer</string>
+    <string name="sessions_button">Sessions</string>
+    <string name="new_session_button">New Sessions</string>
+    <string name="back_button">Back</string>
+    <string name="confirm_button">Confirm</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
