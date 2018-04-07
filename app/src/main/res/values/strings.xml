@@ -11,7 +11,7 @@
     <string name="customers_button">Customers</string>
     <string name="new_customer_button">New Customer</string>
     <string name="sessions_button">Sessions</string>
-    <string name="new_session_button">New Sessions</string>
+    <string name="new_session_button">New Session</string>
     <string name="back_button">Back</string>
     <string name="confirm_button">Confirm</string>
 

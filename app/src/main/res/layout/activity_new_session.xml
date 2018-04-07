@@ -55,7 +55,7 @@
             android:inputType="textMultiLine" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/back_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -65,11 +65,11 @@
             android:text="@string/back_button" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/confirm_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/button8"
+            android:layout_alignTop="@+id/back_button"
             android:layout_marginEnd="60dp"
             android:text="@string/confirm_button" />
 

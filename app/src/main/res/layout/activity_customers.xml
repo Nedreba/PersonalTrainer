@@ -13,23 +13,23 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/button3"
+            android:layout_above="@+id/new_customer_button"
             android:layout_alignParentStart="true"
             android:layout_marginBottom="31dp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/new_customer_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/button4"
-            android:layout_alignBottom="@+id/button4"
+            android:layout_alignBaseline="@+id/session_button"
+            android:layout_alignBottom="@+id/session_button"
             android:layout_alignParentStart="true"
             android:layout_marginStart="57dp"
             android:text="@string/new_customer_button" />
 
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/session_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
