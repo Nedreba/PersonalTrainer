@@ -1,5 +1,6 @@
 package com.bignerdranch.android.personaltrainer;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,11 +8,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
 
 public class NewCustomerActivity extends AppCompatActivity {
 
     private Button mBackButton;
     private Button mConfirmButton;
+    private EditText mCustomerName;
+    private EditText mAdditionalInfo;
+    private MyCustomerDatabase theDatabase;
+
 
 
     @Override
@@ -32,10 +39,13 @@ public class NewCustomerActivity extends AppCompatActivity {
         mConfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO
+                AddCustomer();
 
             }
         });
+        mCustomerName = (EditText) findViewById(R.id.editTextName);
+        mAdditionalInfo = (EditText) findViewById(R.id.editTextAdditionalInfo);
+        theDatabase = new  MyCustomerDatabase(this);
     }
 
     @Override
@@ -49,5 +59,9 @@ public class NewCustomerActivity extends AppCompatActivity {
         Intent intent = new Intent(NewCustomerActivity.this , LoginActivity.class);
         startActivity(intent);
         return true;
+    }
+
+    private void AddCustomer() {
+        theDatabase.addNewCustomer(mCustomerName.getText().toString(), mAdditionalInfo.getText().toString(), true);
     }
 }

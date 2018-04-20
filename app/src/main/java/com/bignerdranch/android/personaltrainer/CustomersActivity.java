@@ -1,12 +1,17 @@
 package com.bignerdranch.android.personaltrainer;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class CustomersActivity extends AppCompatActivity {
 
@@ -35,6 +40,17 @@ public class CustomersActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ListView myListView = (ListView)findViewById(R.id.customer_listview);
+        MyCustomerDatabase theDatabase = new MyCustomerDatabase(this);
+        ArrayList<String> customerNames = theDatabase.getCustomerNames();
+
+        int layoutID = android.R.layout.simple_list_item_1;
+
+        ArrayAdapter<String> myAdapterInstance = new ArrayAdapter<String>(this, layoutID, customerNames);
+
+        myListView.setAdapter(myAdapterInstance);
+
     }
 
     @Override
